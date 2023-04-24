@@ -1,0 +1,41 @@
+.friendList {
+  margin: 45px;
+  margin-bottom: 100px;
+}
+.friendItem {
+  padding: 8px;
+  margin-bottom: 7px;
+  box-shadow: 0 0 10px #c6cccced;
+}
+
+.friendWrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.friends__status {
+  margin-left: 30px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.true {
+  background-color: green;
+}
+.false {
+  background-color: red;
+}
+
+.friendImg {
+  margin-left: 25px;
+}
+
+.friendName {
+  margin-left: 25px;
+  font-size: 25px;
+  color: lightslategray;
+  font-weight: 500;
+}
