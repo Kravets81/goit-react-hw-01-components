@@ -9,20 +9,21 @@ import FriendLIst from './FriendList/FriendList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 
 export const App = () => {
+  const { username, tag, location, avatar, stats } = user;
   return (
-    <div>
+    <>
       <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
+        username={username}
+        tag={tag}
+        location={location}
+        avatar={avatar}
+        followers={stats.followers}
+        views={stats.views}
+        likes={stats.likes}
       />
       <Statistics title="Upload stats" stats={data} />
       <FriendLIst items={friends} />
       <TransactionHistory items={transactions} />
-    </div>
+    </>
   );
 };
